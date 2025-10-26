@@ -1,11 +1,8 @@
-services:
-  - type: web
-    name: nytro-dashboard
-    dockerfilePath: ./Dockerfile
-    dockerContext: .
+static_sites:
+  - name: nytro-dashboard
+    buildCommand: npm ci && npm run render-build
+    staticPublishPath: out
     envVars:
       - key: NODE_ENV
         value: production
-      - key: PORT
-        value: 3000
 
