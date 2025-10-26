@@ -2,11 +2,14 @@ services:
   - type: web
     name: nytro-dashboard
     runtime: node
-    buildCommand: yarn install && yarn build
-    startCommand: npm start
+    plan: free
+    buildCommand: npm install && npm run build
+    startCommand: node server-static.js
     envVars:
       - key: NODE_VERSION
-        value: 22.16.0
+        value: 22
+      - key: NODE_ENV
+        value: production
       - key: PORT
         value: 3000
 
