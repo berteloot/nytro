@@ -1,7 +1,7 @@
 static_sites:
   - name: nytro-dashboard
     buildCommand: npm ci && npm run render-build
-    staticPublishPath: out
+    publishDirectory: out
     envVars:
       - key: NODE_ENV
         value: production
