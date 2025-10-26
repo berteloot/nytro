@@ -105,10 +105,10 @@ export default function CaseGuardPitchDashboard() {
       <header className="sticky top-0 z-20 bg-white/90 backdrop-blur border-b">
         <div className="max-w-7xl mx-auto flex items-center justify-between py-4 px-4">
           <div className="flex items-center gap-3">
-            <img src="caseguard-cglogo-trademark.png" alt="CaseGuard" className="h-8"/>
+            <span className="text-xl font-bold text-gray-900">CaseGuard</span>
           </div>
           <div className="flex items-center gap-3">
-            <img src="logo_Nytro_color.png" alt="Nytro Marketing" className="h-8"/>
+            <span className="text-xl font-bold text-blue-600">Nytro</span>
           </div>
         </div>
       </header>
